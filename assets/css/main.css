@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+input{
+    width: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    padding: 1px 3px;
+    background: none;
+    border: none;
+    background-color: gold;
+    border-radius: 2px;
+}
+#btn:hover{
+background-color: aqua;
+transition: 1s;
+cursor: pointer;
+}
+span{
+    padding: 1px 3px;
+    margin-left: 5px;
+    border: 1px solid gray;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes box {
+    to{
+        transform: scale(1.1);
+    }
+}
